@@ -1,5 +1,13 @@
 # coding:utf-8
-
+if __name__ == '__main__':
+    import ctypes
+    import sys
+    if sys.platform.startswith('linux'):
+        try:
+            x11 = ctypes.cdll.LoadLibrary('libX11.so')
+            x11.XInitThreads()
+        except:
+            print "Warning: failed to XInitThreads()"
 import os
 import random
 import numpy as np
@@ -10,13 +18,13 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.layers import Convolution2D, Flatten, Dense,Conv2D
-from gan_env_intelligent import freq_env
+from gan_env_real import freq_env
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import tkinter as tk
 import time
 
-ENV_NAME = 'gan_model_intelligent_5'#'Breakout-v0'  # Environment name
+ENV_NAME = 'gan_model_online'#'Breakout-v0'  # Environment name
 FRAME_WIDTH = 100  # Resized frame width
 FRAME_HEIGHT = 1601  # Resized frame height
 NUM_EPISODES = 20000  # Number of episodes the agent plays
@@ -25,22 +33,21 @@ GAMMA = 0.9  # Discount factor
 EXPLORATION_STEPS = 10000  # Number of steps over which the initial value of epsilon is linearly annealed to its final value
 INITIAL_EPSILON = 1.0  # Initial value of epsilon in epsilon-greedy
 FINAL_EPSILON = 0  # Final value of epsilon in epsilon-greedy
-INITIAL_REPLAY_SIZE = 4000  #4000 Number of steps to populate the replay memory before training starts
-NUM_REPLAY_MEMORY = 10000  #10000 Number of replay memory the agent uses for training
-BATCH_SIZE = 128  #128 Mini batch size
+INITIAL_REPLAY_SIZE = 4000  # Number of steps to populate the replay memory before training starts
+NUM_REPLAY_MEMORY = 10000  # Number of replay memory the agent uses for training
+BATCH_SIZE = 128  # Mini batch size
 TARGET_UPDATE_INTERVAL = 200  # The frequency with which the target network is updated
 TRAIN_INTERVAL = 4  # The agent selects 4 actions between successive updates
 LEARNING_RATE = 0.00025  # Learning rate used by RMSProp
 MOMENTUM = 0.95  # Momentum used by RMSProp
 MIN_GRAD = 0.01  # Constant added to the squared gradient in the denominator of the RMSProp update
-SAVE_INTERVAL = 10000  #10000 The frequency with which the network is saved
+SAVE_INTERVAL = 1000  # The frequency with which the network is saved
 NO_OP_STEPS = 30  # Maximum number of "do nothing" actions to be performed by the agent at the start of an episode
-LOAD_NETWORK = True
-TRAIN = False
+LOAD_NETWORK = False
+TRAIN = True
 SAVE_NETWORK_PATH = 'saved_networks/' + ENV_NAME
 SAVE_SUMMARY_PATH = 'summary/' + ENV_NAME
 NUM_EPISODES_AT_TEST = 300  # Number of episodes the agent plays at test time
-
 
 class Agent():
     def __init__(self, num_actions):
@@ -173,7 +180,7 @@ class Agent():
         self.total_q_max += np.max(self.q_values.eval(feed_dict={self.s: [np.float32(state)]}))
         self.duration += 1
 
-        if terminal or self.duration % 100 == 0:
+        if terminal:
             # Write summary
             if self.t >= INITIAL_REPLAY_SIZE:
                 stats = [self.total_reward, self.total_q_max / float(self.duration),
@@ -185,25 +192,23 @@ class Agent():
                 summary_str = self.sess.run(self.summary_op)
                 self.summary_writer.add_summary(summary_str, self.episode + 1)
 
-            if terminal:
-                # Debug
-                if self.t < INITIAL_REPLAY_SIZE:
-                    mode = 'random'
-                elif INITIAL_REPLAY_SIZE <= self.t < INITIAL_REPLAY_SIZE + EXPLORATION_STEPS:
-                    mode = 'explore'
-                else:
-                    mode = 'exploit'
+            # Debug
+            if self.t < INITIAL_REPLAY_SIZE:
+                mode = 'random'
+            elif INITIAL_REPLAY_SIZE <= self.t < INITIAL_REPLAY_SIZE + EXPLORATION_STEPS:
+                mode = 'explore'
+            else:
+                mode = 'exploit'
+            print('EPISODE: {0:6d} / TIMESTEP: {1:8d} / DURATION: {2:5d} / EPSILON: {3:.5f} / TOTAL_REWARD: {4:3.0f} / AVG_MAX_Q: {5:2.4f} / AVG_LOSS: {6:.5f} / MODE: {7}'.format(
+                self.episode + 1, self.t, self.duration, self.epsilon,
+                self.total_reward, self.total_q_max / float(self.duration),
+                self.total_loss / (float(self.duration) / float(TRAIN_INTERVAL)), mode))
 
-                print('EPISODE: {0:6d} / TIMESTEP: {1:8d} / DURATION: {2:5d} / EPSILON: {3:.5f} / TOTAL_REWARD: {4:3.0f} / AVG_MAX_Q: {5:2.4f} / AVG_LOSS: {6:.5f} / MODE: {7}'.format(
-                    self.episode + 1, self.t, self.duration, self.epsilon,
-                    self.total_reward, self.total_q_max / float(self.duration),
-                    self.total_loss / (float(self.duration) / float(TRAIN_INTERVAL)), mode))
-
-                self.total_reward = 0
-                self.total_q_max = 0
-                self.total_loss = 0
-                self.duration = 0
-                self.episode += 1
+            self.total_reward = 0
+            self.total_q_max = 0
+            self.total_loss = 0
+            self.duration = 0
+            self.episode += 1
 
         self.t += 1
 
@@ -282,7 +287,6 @@ def preprocess(observation):
 
 
 def main():
-    #env = gym.make(ENV_NAME)
     root = tk.Tk()
     root.title("matplotlib in TK")
     f = Figure(figsize=(6, 6), dpi=100)
@@ -290,62 +294,46 @@ def main():
     canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
 
     env = freq_env()
+    env.main_thread()
 
-    saver = tf.train.Saver()
-    checkpoint = tf.train.latest_checkpoint("debug_train")
-
-    with tf.Session() as sess:
-        print("loading model from checkpoint")
-        saver.restore(sess, checkpoint)
-        agent = Agent(num_actions=env.n_actions)
-        if TRAIN:  # Train mode
-            for _ in range(NUM_EPISODES):
-                terminal = False
-
-                observation, observation_label = env.waterfall_reset(sess)
+    agent = Agent(num_actions=env.n_actions)
+    if TRAIN:  # Train mode
+        for _ in range(NUM_EPISODES):
+            terminal = False
+            observation = env.waterfall_reset()
+            last_observation = observation
+            state = agent.get_initial_state(last_observation)
+            while not terminal:
                 last_observation = observation
-                last_observation_label = observation_label
-                state = agent.get_initial_state(last_observation)
-
-                while not terminal:
-                    last_observation = observation
-                    last_observation_label = observation_label
-                    action = agent.get_action(state)
-                    observation,observation_label,reward, terminal= env.step(last_observation,last_observation_label,action,sess)
-                    """"""
-                    f.clf()
-                    waterfall_figure = f.add_subplot(111)
-                    waterfall_figure.imshow(observation[:,:],interpolation='nearest',aspect='auto')
-                    canvas.draw()
-
-                    #if terminal:
-                        #print(action)
-                        #time.sleep(5)
-
-                    processed_observation = preprocess(observation)
-                    #print(observation==last_observation)
-                    state = agent.run(state, action, reward, terminal, processed_observation)
-        else:  # Test mode
-            for _ in range(NUM_EPISODES_AT_TEST):
-                terminal = False
-                observation, observation_label = env.waterfall_reset(sess)
+                action = agent.get_action(state)
+                observation,reward, terminal= env.step(last_observation,action)
+                """"""
+                f.clf()
+                waterfall_figure = f.add_subplot(111)
+                waterfall_figure.imshow(observation[:,:],interpolation='nearest',aspect='auto')
+                canvas.draw()
+                processed_observation = preprocess(observation)
+                #print(observation==last_observation)
+                state = agent.run(state, action, reward, terminal, processed_observation)
+    else:  # Test mode
+        for _ in range(NUM_EPISODES_AT_TEST):
+            terminal = False
+            observation = env.waterfall_reset()
+            last_observation = observation
+            state = agent.get_initial_state(last_observation)
+            while not terminal:
                 last_observation = observation
-                last_observation_label = observation_label
-                state = agent.get_initial_state(last_observation)
-                while not terminal:
-                    last_observation = observation
-                    last_observation_label = observation_label
-                    action = agent.get_action_at_test(state)
-                    #print(action)
-                    observation, observation_label, reward, terminal = env.step(last_observation,last_observation_label, action,sess)
-                    """"""
-                    f.clf()
-                    waterfall_figure = f.add_subplot(111)
-                    waterfall_figure.imshow(observation[:,:],interpolation='nearest',aspect='auto')
-                    canvas.draw()
+                action = agent.get_action_at_test(state)
+                observation,reward, terminal = env.step(last_observation, action)
 
-                    processed_observation = preprocess(observation)
-                    state = processed_observation
+                """"""
+                f.clf()
+                waterfall_figure = f.add_subplot(111)
+                waterfall_figure.imshow(observation[:,:],interpolation='nearest',aspect='auto')
+                canvas.draw()
+
+                processed_observation = preprocess(observation)
+                state = processed_observation
 
 if __name__ == '__main__':
     main()
