@@ -1,0 +1,32 @@
+<head>
+	
+</head>
+<input type="text" id="input" name="input" placeholder="Enter sentence"/>
+<button id="btn">Call API</button>
+<div id="api_output"> </div>
+<script type="text/javascript">
+	function api_call(input) {
+        $.ajax({
+            url: "http://0.0.0.0:5000/api",
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(input),
+            success: function( data, textStatus, jQxhr ){
+                $('#api_output').html( data.output );
+                $("#input").val("");
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                $('#api_output').html( "There was an error" );
+                console.log( errorThrown );
+            },
+            timeout: 3000
+        });
+    }
+	window.onload=function(){
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+			alert("clicked");
+		};
+		alert("123");
+	}
+</script>

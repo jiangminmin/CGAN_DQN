@@ -1,0 +1,643 @@
+2019-04-10 11:18:46,544:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 11:18:46,956:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 11:18:46,956:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 11:18:46,957:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 11:18:46,960:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 11:18:47,087:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 11:18:48,273:INFO: Initializing tf session
+2019-04-10 11:18:49,730:INFO: Reloading the latest trained model...
+2019-04-10 11:18:49,731:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 11:18:49,731:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 11:18:49,855:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-10 11:26:03,928:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-10 11:26:03,950:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-10 11:26:05,332:INFO: Initializing tf session
+2019-04-10 11:26:06,319:INFO: Reloading the latest trained model...
+2019-04-10 11:26:06,319:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 11:26:06,388:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-10 11:43:39,783:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-10 11:43:39,804:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-10 11:43:41,155:INFO: Initializing tf session
+2019-04-10 11:43:42,154:INFO: Reloading the latest trained model...
+2019-04-10 11:43:42,154:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 11:43:42,220:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-10 11:44:03,857:INFO: 127.0.0.1 - - [10/Apr/2019 11:44:03] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 11:44:03,911:INFO: 127.0.0.1 - - [10/Apr/2019 11:44:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2019-04-10 11:45:16,738:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 11:45:17,147:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 11:45:17,148:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 11:45:17,148:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 11:45:17,151:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 11:45:17,277:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 11:45:18,467:INFO: Initializing tf session
+2019-04-10 11:45:19,627:INFO: Reloading the latest trained model...
+2019-04-10 11:45:19,627:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 11:45:19,628:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 11:45:19,731:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-10 11:45:44,740:INFO: 127.0.0.1 - - [10/Apr/2019 11:45:44] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 11:45:44,976:INFO: 127.0.0.1 - - [10/Apr/2019 11:45:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2019-04-10 11:46:21,267:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 11:46:21,676:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 11:46:21,676:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 11:46:21,676:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 11:46:21,680:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 11:46:21,804:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 11:46:22,985:INFO: Initializing tf session
+2019-04-10 11:46:24,156:INFO: Reloading the latest trained model...
+2019-04-10 11:46:24,156:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 11:46:24,156:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 11:46:24,259:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-10 11:46:26,051:INFO: 127.0.0.1 - - [10/Apr/2019 11:46:26] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 13:58:40,175:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-10 13:58:40,175:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-10 13:58:41,532:INFO: Initializing tf session
+2019-04-10 13:58:42,518:INFO: Reloading the latest trained model...
+2019-04-10 13:58:42,519:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 13:58:42,584:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 13:58:42,585:INFO:  * Restarting with stat
+2019-04-10 13:58:45,450:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-10 13:58:45,450:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-10 13:58:46,752:INFO: Initializing tf session
+2019-04-10 13:58:47,423:INFO: Reloading the latest trained model...
+2019-04-10 13:58:47,423:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 13:58:47,489:WARNING:  * Debugger is active!
+2019-04-10 13:58:47,489:INFO:  * Debugger PIN: 138-397-499
+2019-04-10 14:09:21,633:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:09:22,061:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:09:22,061:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:09:22,062:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:09:22,065:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:09:22,196:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:09:23,349:INFO: Initializing tf session
+2019-04-10 14:09:24,527:INFO: Reloading the latest trained model...
+2019-04-10 14:09:24,527:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:09:24,528:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:09:24,634:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 14:09:24,634:INFO:  * Restarting with stat
+2019-04-10 14:09:25,812:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:09:26,224:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:09:26,224:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:09:26,225:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:09:26,228:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:09:26,350:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:09:27,512:INFO: Initializing tf session
+2019-04-10 14:09:28,130:INFO: Reloading the latest trained model...
+2019-04-10 14:09:28,130:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:09:28,130:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:09:28,272:WARNING:  * Debugger is active!
+2019-04-10 14:09:28,272:INFO:  * Debugger PIN: 248-181-721
+2019-04-10 14:09:37,027:INFO: 127.0.0.1 - - [10/Apr/2019 14:09:37] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 14:09:37,046:INFO: 127.0.0.1 - - [10/Apr/2019 14:09:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2019-04-10 14:12:09,157:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:12:09,564:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:12:09,564:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:12:09,564:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:12:09,567:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:12:09,689:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:12:10,832:INFO: Initializing tf session
+2019-04-10 14:12:12,011:INFO: Reloading the latest trained model...
+2019-04-10 14:12:12,012:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:12:12,012:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:12:12,117:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 14:12:12,117:INFO:  * Restarting with stat
+2019-04-10 14:12:13,296:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:12:13,702:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:12:13,702:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:12:13,703:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:12:13,706:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:12:13,828:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:12:14,970:INFO: Initializing tf session
+2019-04-10 14:12:15,576:INFO: Reloading the latest trained model...
+2019-04-10 14:12:15,576:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:12:15,577:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:12:15,717:WARNING:  * Debugger is active!
+2019-04-10 14:12:15,717:INFO:  * Debugger PIN: 230-393-779
+2019-04-10 14:12:21,257:INFO: 127.0.0.1 - - [10/Apr/2019 14:12:21] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 14:12:31,635:INFO: 127.0.0.1 - - [10/Apr/2019 14:12:31] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:12:31,636:INFO: api_input: 
+2019-04-10 14:12:31,809:INFO: 127.0.0.1 - - [10/Apr/2019 14:12:31] "[1m[35mPOST /api HTTP/1.1[0m" 500 -
+2019-04-10 14:12:40,760:INFO: 127.0.0.1 - - [10/Apr/2019 14:12:40] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:12:40,760:INFO: api_input: I love Paris
+2019-04-10 14:14:44,111:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:14:44,517:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:14:44,517:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:14:44,517:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:14:44,520:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:14:44,642:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:14:45,788:INFO: Initializing tf session
+2019-04-10 14:14:46,949:INFO: Reloading the latest trained model...
+2019-04-10 14:14:46,949:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:14:46,949:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:14:47,055:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 14:14:47,055:INFO:  * Restarting with stat
+2019-04-10 14:14:48,241:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:14:48,651:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:14:48,652:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:14:48,652:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:14:48,655:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:14:48,779:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:14:49,930:INFO: Initializing tf session
+2019-04-10 14:14:50,553:INFO: Reloading the latest trained model...
+2019-04-10 14:14:50,553:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:14:50,554:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:14:50,685:WARNING:  * Debugger is active!
+2019-04-10 14:14:50,685:INFO:  * Debugger PIN: 270-213-258
+2019-04-10 14:14:59,782:INFO: 127.0.0.1 - - [10/Apr/2019 14:14:59] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 14:15:18,774:INFO: 127.0.0.1 - - [10/Apr/2019 14:15:18] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:15:18,775:INFO: api_input: I love Paris
+2019-04-10 14:15:18,985:INFO: 127.0.0.1 - - [10/Apr/2019 14:15:18] "[1m[35mPOST /api HTTP/1.1[0m" 500 -
+2019-04-10 14:17:37,386:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:17:37,795:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:17:37,795:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:17:37,796:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:17:37,799:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:17:37,923:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:17:39,101:INFO: Initializing tf session
+2019-04-10 14:17:40,316:INFO: Reloading the latest trained model...
+2019-04-10 14:17:40,316:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:17:40,316:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:17:40,424:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 14:17:40,425:INFO:  * Restarting with stat
+2019-04-10 14:17:41,606:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:17:42,011:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:17:42,011:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:17:42,012:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:17:42,015:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:17:42,139:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:17:43,283:INFO: Initializing tf session
+2019-04-10 14:17:43,910:INFO: Reloading the latest trained model...
+2019-04-10 14:17:43,910:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:17:43,910:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:17:44,045:WARNING:  * Debugger is active!
+2019-04-10 14:17:44,045:INFO:  * Debugger PIN: 267-431-469
+2019-04-10 14:17:54,066:INFO: 127.0.0.1 - - [10/Apr/2019 14:17:54] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 14:18:24,902:INFO: 127.0.0.1 - - [10/Apr/2019 14:18:24] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:18:24,906:INFO: api_input: I love Paris
+2019-04-10 14:18:25,154:INFO: 127.0.0.1 - - [10/Apr/2019 14:18:25] "[1m[35mPOST /api HTTP/1.1[0m" 500 -
+2019-04-10 14:19:58,568:INFO: 127.0.0.1 - - [10/Apr/2019 14:19:58] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:19:58,570:INFO: api_input: dsfgd gfdsg
+2019-04-10 14:20:52,720:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:20:53,125:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:20:53,126:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:20:53,126:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:20:53,129:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:20:53,252:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:20:54,399:INFO: Initializing tf session
+2019-04-10 14:20:55,589:INFO: Reloading the latest trained model...
+2019-04-10 14:20:55,589:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:20:55,589:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:20:55,703:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 14:20:55,703:INFO:  * Restarting with stat
+2019-04-10 14:20:56,904:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 14:20:57,312:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 14:20:57,313:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 14:20:57,313:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 14:20:57,316:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 14:20:57,439:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 14:20:58,613:INFO: Initializing tf session
+2019-04-10 14:20:59,223:INFO: Reloading the latest trained model...
+2019-04-10 14:20:59,223:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 14:20:59,224:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 14:20:59,367:WARNING:  * Debugger is active!
+2019-04-10 14:20:59,367:INFO:  * Debugger PIN: 226-153-773
+2019-04-10 14:21:10,436:INFO: 127.0.0.1 - - [10/Apr/2019 14:21:10] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 14:21:33,098:INFO: 127.0.0.1 - - [10/Apr/2019 14:21:33] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 14:21:33,098:INFO: api_input: I am man
+2019-04-10 14:21:33,313:INFO: 127.0.0.1 - - [10/Apr/2019 14:21:33] "[1m[35mPOST /api HTTP/1.1[0m" 500 -
+2019-04-10 20:00:47,440:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 20:00:47,866:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 20:00:47,867:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 20:00:47,867:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 20:00:47,870:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 20:00:47,999:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 20:00:49,210:INFO: Initializing tf session
+2019-04-10 20:00:50,391:INFO: Reloading the latest trained model...
+2019-04-10 20:00:50,391:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 20:00:50,392:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 20:00:50,503:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 20:00:50,503:INFO:  * Restarting with stat
+2019-04-10 20:00:51,686:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 20:00:52,093:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 20:00:52,093:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 20:00:52,094:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 20:00:52,097:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 20:00:52,220:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 20:00:53,379:INFO: Initializing tf session
+2019-04-10 20:00:54,014:INFO: Reloading the latest trained model...
+2019-04-10 20:00:54,014:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 20:00:54,015:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 20:00:54,166:WARNING:  * Debugger is active!
+2019-04-10 20:00:54,166:INFO:  * Debugger PIN: 228-733-373
+2019-04-10 20:00:59,016:INFO: 127.0.0.1 - - [10/Apr/2019 20:00:59] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 20:01:31,733:INFO: 127.0.0.1 - - [10/Apr/2019 20:01:31] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 20:01:31,737:INFO: api_input: I love Paris
+2019-04-10 20:01:31,966:INFO: 127.0.0.1 - - [10/Apr/2019 20:01:31] "[1m[35mPOST /api HTTP/1.1[0m" 500 -
+2019-04-10 20:01:55,651:INFO: 127.0.0.1 - - [10/Apr/2019 20:01:55] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 20:01:55,653:INFO: api_input: I am man
+2019-04-10 20:29:11,731:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 20:29:17,453:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 20:29:17,455:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 20:29:17,456:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 20:29:17,744:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 20:29:17,886:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 20:29:19,107:INFO: Initializing tf session
+2019-04-10 20:29:20,153:INFO: Reloading the latest trained model...
+2019-04-10 20:29:20,153:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 20:29:20,154:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 20:29:20,811:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-10 20:29:20,813:INFO:  * Restarting with stat
+2019-04-10 20:29:21,996:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-10 20:29:22,402:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-10 20:29:22,402:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-10 20:29:22,402:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-10 20:29:22,405:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-10 20:29:22,527:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-10 20:29:23,677:INFO: Initializing tf session
+2019-04-10 20:29:24,154:INFO: Reloading the latest trained model...
+2019-04-10 20:29:24,154:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-10 20:29:24,154:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-10 20:29:24,255:WARNING:  * Debugger is active!
+2019-04-10 20:29:24,255:INFO:  * Debugger PIN: 879-579-383
+2019-04-10 20:31:02,935:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:02] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-10 20:31:02,963:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2019-04-10 20:31:13,712:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:13] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 20:31:13,716:INFO: api_input: I am man
+2019-04-10 20:31:14,302:INFO: api_output: {'input': u'I am man ', 'output': 'O O  O   '}
+2019-04-10 20:31:14,304:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:14] "[37mPOST /api HTTP/1.1[0m" 200 -
+2019-04-10 20:31:17,448:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:17] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 20:31:17,450:INFO: api_input: 
+2019-04-10 20:31:17,451:INFO: api_output: {'input': '  ', 'output': 'O '}
+2019-04-10 20:31:17,451:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:17] "[37mPOST /api HTTP/1.1[0m" 200 -
+2019-04-10 20:31:25,402:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:25] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-10 20:31:25,403:INFO: api_input: I love Paris
+2019-04-10 20:31:25,405:INFO: api_output: {'input': u'I love Paris ', 'output': 'O O    B-LOC '}
+2019-04-10 20:31:25,405:INFO: 127.0.0.1 - - [10/Apr/2019 20:31:25] "[37mPOST /api HTTP/1.1[0m" 200 -
+2019-04-11 09:21:51,648:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-11 09:21:52,058:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-11 09:21:52,059:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-11 09:21:52,059:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-11 09:21:52,062:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-11 09:21:52,188:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-11 09:21:53,375:INFO: Initializing tf session
+2019-04-11 09:21:53,874:INFO: Reloading the latest trained model...
+2019-04-11 09:21:53,874:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-11 09:21:53,874:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-11 09:21:53,975:INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-04-11 09:21:59,313:INFO: 127.0.0.1 - - [11/Apr/2019 09:21:59] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-11 09:21:59,329:INFO: 127.0.0.1 - - [11/Apr/2019 09:21:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2019-04-11 09:26:25,624:INFO: 127.0.0.1 - - [11/Apr/2019 09:26:25] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-11 09:26:25,625:INFO: api_input: I am man
+2019-04-11 09:26:25,750:INFO: api_output: {'input': u'I am man ', 'output': 'O O  O   '}
+2019-04-11 09:26:25,750:INFO: 127.0.0.1 - - [11/Apr/2019 09:26:25] "[37mPOST /api HTTP/1.1[0m" 200 -
+2019-04-11 14:41:18,050:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-11 14:41:18,050:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-11 14:41:19,542:INFO: Initializing tf session
+2019-04-11 14:41:20,162:INFO: Reloading the latest trained model...
+2019-04-11 14:41:20,163:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-11 14:41:20,282:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-11 14:41:20,282:INFO:  * Restarting with stat
+2019-04-11 14:41:23,357:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:417: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2019-04-11 14:41:23,358:WARNING: From /home/jojo/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:432: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2019-04-11 14:41:24,737:INFO: Initializing tf session
+2019-04-11 14:41:25,186:INFO: Reloading the latest trained model...
+2019-04-11 14:41:25,186:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-11 14:41:25,252:WARNING:  * Debugger is active!
+2019-04-11 14:41:25,252:INFO:  * Debugger PIN: 233-198-795
+2019-04-11 14:41:31,587:INFO: 127.0.0.1 - - [11/Apr/2019 14:41:31] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-11 14:41:56,671:INFO: 127.0.0.1 - - [11/Apr/2019 14:41:56] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-11 14:41:56,672:INFO: api_input: dadsa
+2019-04-11 14:41:57,128:INFO: api_output: {'input': 'dadsa ', 'output': 'O     '}
+2019-04-11 14:41:57,130:INFO: 127.0.0.1 - - [11/Apr/2019 14:41:57] "[37mPOST /api HTTP/1.1[0m" 200 -
+2019-04-11 15:15:09,947:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-11 15:15:10,360:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-11 15:15:10,360:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-11 15:15:10,361:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-11 15:15:10,364:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-11 15:15:10,487:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-11 15:15:11,685:INFO: Initializing tf session
+2019-04-11 15:15:12,163:INFO: Reloading the latest trained model...
+2019-04-11 15:15:12,163:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-11 15:15:12,164:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-11 15:15:12,265:INFO:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-04-11 15:15:12,266:INFO:  * Restarting with stat
+2019-04-11 15:15:13,430:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-04-11 15:15:13,835:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:138: __init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2019-04-11 15:15:13,835:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2019-04-11 15:15:13,836:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:443: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2019-04-11 15:15:13,839:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-11 15:15:13,961:WARNING: From /home/jmm/Downloads/api_ner-master/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2019-04-11 15:15:15,105:INFO: Initializing tf session
+2019-04-11 15:15:15,603:INFO: Reloading the latest trained model...
+2019-04-11 15:15:15,603:WARNING: From /home/jmm/anaconda2/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2019-04-11 15:15:15,603:INFO: Restoring parameters from results/crf/model.weights/
+2019-04-11 15:15:15,710:WARNING:  * Debugger is active!
+2019-04-11 15:15:15,710:INFO:  * Debugger PIN: 572-383-967
+2019-04-11 15:15:15,712:INFO: 127.0.0.1 - - [11/Apr/2019 15:15:15] "[37mGET / HTTP/1.1[0m" 200 -
+2019-04-11 15:15:46,639:INFO: 127.0.0.1 - - [11/Apr/2019 15:15:46] "[37mOPTIONS /api HTTP/1.1[0m" 200 -
+2019-04-11 15:15:46,640:INFO: api_input: I am man
+2019-04-11 15:15:46,767:INFO: api_output: {'input': u'I am man ', 'output': 'O O  O   '}
+2019-04-11 15:15:46,768:INFO: 127.0.0.1 - - [11/Apr/2019 15:15:46] "[37mPOST /api HTTP/1.1[0m" 200 -
