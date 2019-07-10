@@ -14,3 +14,5 @@ tensorboard --logdir=facades_train\
 python dqn-cgn.py\
 #dgn-cgan调用tensorboard命令\
 tensorboard --logdir=summary/
+
+#my_flask_api文件夹是flask部署CGAN模型的代码
