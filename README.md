@@ -22,7 +22,6 @@ url = "http://10.20.51.223:5000/api" \
 ##data = requests.get(url).json \
 files = {'file': open('test.jpg', 'rb')} \
 r = requests.post(url, files=files) \
-
-result = r.text
+result = r.text \
 #1.文件目录用绝对路径\
 #2.不要用pycharm运行app.py代码，直接在终端运行
