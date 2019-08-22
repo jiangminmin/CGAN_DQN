@@ -19,7 +19,7 @@ tensorboard --logdir=summary/
 #终端执行命令，可获取模型输出数据：curl --form "file=@upload.jpg" http://10.20.51.223:5000/api \
 #代码访问模型：
 url = "http://10.20.51.223:5000/api" \
-# data = requests.get(url).json \
+##data = requests.get(url).json \
 files = {'file': open('test.jpg', 'rb')} \
 r = requests.post(url, files=files) \
 
